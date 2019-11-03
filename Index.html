@@ -13,32 +13,69 @@
 </head>
 
 <body>
-    <div class="grid-x">
-        <div class="cell medium-3">
-            <h1>12:00 AM</h1>
-        </div>
-        <div class="cell medium-3">
-            <textarea name="twelveAMNotes" id="twelveAMNotes" cols="30" rows="3"></textarea>
-        </div>
-    </div>
 
-    <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Keyword" aria-label="Keyword"
-                aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button type="button" class="btn btn-primary">Search</button>
+
+    <div class="grid-y medium-grid-frame padding-x">
+        <!--Header-->
+        <div class="cell shrink header text-center align-center">
+            <div class="grid-y">
+                <h1 class="h3" id="headerGreeting">Good Morning!</h1>
+                <h3 class="h4" id="headerDate">Monday, January 1, 2019</h3>
+                <h3 class="subheader h4" id="headerTime"> 10:05 am</h3>
             </div>
         </div>
-    
-    
-        <iframe id="videoHere" width="560" height="315"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+        <!--Main-->
+        <div class="cell medium-auto">
+            <div class="grid-x grid-padding-x grid-padding-y-small">
+                <!--Sidebar-->
+                <div class="cell medium-4">
+                    <div class="grid-y medium-grid-frame">
+                        <!--Weather (MICHAEL)-->
+                        <!--PASTE YOUR HTML INSIDE THE DIV.CELL BELOW; do not delete or alter any other grid/cells-->
+                        <div class="cell">
+                            Michael's stuff goes here
+                        </div>
+                        <!--YouTube (MIKE)-->
+                        <!--PASTE YOUR HTML INSIDE THE DIV.CELL BELOW; do not delete or alter any other grid/cells-->
+                        <div class="cell">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Keyword" aria-label="Keyword"
+                                    aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
 
+
+                            <iframe id="videoHere" width="560" height="315" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!--Planner(GABE)-->
+                <div class="cell medium-8 medium-cell-block-container">
+                    <!--PASTE YOUR HTML INSIDE THE DIV.GRID-Y BELOW; do not delete or alter any other grid/cells-->
+                    <div class="grid-y medium-grid-frame">
+                        Gabe's stuff goes here
+                    </div>
+                </div>
+            </div>
+
+            <!--End Main-->
+        </div>
+
+        <!--End Grid-y (shell)-->
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"
         integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
         crossorigin="anonymous"></script>
+    <script src="assets/js/headerScript.js"></script>
     <script>
         $(document).foundation();
     </script>
