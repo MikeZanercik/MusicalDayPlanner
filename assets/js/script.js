@@ -3,13 +3,24 @@ var weather = {}
 $("document").ready(function() {
 
     var weatherAPIKey = "166a433c57516f51dfab1f7edaed8413";
-    var weatherqueryURL = "https://api.openweathermap.org/data/2.5/weather?q=Charlotte&appid=" + weatherAPIKey;
-    
+    var weatherqueryURL = "https://api.openweathermap.org/data/2.5/weather?q=Charlotte&appid=" + weatherAPIKey + "&units=imperial";
     $.ajax({
         url: weatherqueryURL,
         method: "GET"
     }).then(function (response) {
         weather = {};
+        var cityName = response.name;
+        var iconId = response.weather[0].icon;
+        var icon = "http://openweathermap.org/img/wn/" + iconId + ".png";
+        var temp = response.main.temp;
+        var humidity = response.main.humidity;
+        var windSpeed = response.wind.speed;
+
+        $("#city-name").html(cityName + "<img src=" + icon + " alt=weather icon>");
+        $("#temp").html("Currently: " + temp + " °F");
+        $("#humidity").html("Humidity: " + humidity + "%");
+        $("#wind-speed").html("Wind Speed: " + windSpeed + " MPH");
+        
         weather.icon = response.weather[0].icon           
         if (weather.icon === "01d" || weather.icon === "01n"){
             //Dance Playlist
