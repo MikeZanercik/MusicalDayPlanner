@@ -1,0 +1,9 @@
+.input-group {
+    margin-bottom: 0;
+}
+.input-group>:last-child>* {
+    border-radius: 0px 15px 15px 0px;
+}
+.input-group-label:first-child {
+    border-radius: 15px 0px 0px 15px;
+}
