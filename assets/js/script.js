@@ -114,4 +114,11 @@ $("document").ready(function() {
     }) 
 })
 
-
+  $('.button').on("click", function(){
+        var holder = $(this).val();
+        console.log(holder)
+       localStorage.setItem(holder, $(holder).val());
+    })
+    for (var j = 0; j < 24; j++) {
+        $('#' + j).val(localStorage.getItem('#' + j))
+    }
