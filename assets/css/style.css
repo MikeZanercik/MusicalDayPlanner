@@ -34,3 +34,13 @@
 .mist{
     background-image: url(../images/50mist.jpg);
 }
+
+
+/* styling for the weather section box */
+#weatherInfo {
+    border: 2px solid black;
+    background-color: antiquewhite;
+    width: 75%;
+    margin-left: 10%;
+    padding: 3%;
+}
