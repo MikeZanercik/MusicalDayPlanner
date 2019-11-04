@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-$(".btn-primary").on("click", function () {
-    event.preventDefault();
-    keyWord = ($(":input.form-control").val());
-
-
-    var APIKey = "AIzaSyDmFlD6zsHY-21J4zaP8YC9M5pLgMkrXxU";
-    //i've been messing around with the URL to make it more dynamic but should probably make it much simpler
-    var queryURL = "https://www.googleapis.com/youtube/v3/playlists?part=snippet&maxResults=1&q=" + keyWord + "&type=video&videoEmbeddable=true&key=" + APIKey;
-
-=======
 var weather = {}
 
 $("document").ready(function() {
@@ -16,7 +5,6 @@ $("document").ready(function() {
     var weatherAPIKey = "166a433c57516f51dfab1f7edaed8413";
     var weatherqueryURL = "https://api.openweathermap.org/data/2.5/weather?q=Charlotte&appid=" + weatherAPIKey;
     
->>>>>>> 879be803f28e87f6d7e9330820d12b9ff83ebcfc
     $.ajax({
         url: weatherqueryURL,
         method: "GET"
