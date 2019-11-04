@@ -51,7 +51,7 @@ $("document").ready(function() {
 
     //does not run unless you call youtubeAPI();
     function youtubeAPI(keyWord){
-        var youTubeAPIKey = "AIzaSyDmFlD6zsHY-21J4zaP8YC9M5pLgMkrXxU";
+        var youTubeAPIKey = "AIzaSyB6SUoweB2Y51wzqgxaK8UWY5C1JRYzt6o";
         var youTubequeryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + keyWord + "&type=video&videoEmbeddable=true&key=" + youTubeAPIKey;          
     
         $.ajax({
