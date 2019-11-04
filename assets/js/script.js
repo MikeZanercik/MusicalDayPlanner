@@ -25,38 +25,47 @@ $("document").ready(function() {
         if (weather.icon === "01d" || weather.icon === "01n"){
             //Dance Playlist
             youtubeAPI("UX1cdPqW5M8")
+            $("body").addClass("clear")
         }
         if(weather.icon === "02d" || weather.icon === "02n"){
             //Jazzy playlist
             youtubeAPI("cBJHd4p9Ct8")
+            $("body").addClass("fewClouds")
         }
         if(weather.icon === "03d" || weather.icon === "03n"){
             //Indie playlist
             youtubeAPI("txCvcmp8PVU")
+            $("body").addClass("scatteredClouds")
         }
         if(weather.icon === "04d" || weather.icon === "04n"){
             //Slow playlist
             youtubeAPI("bM0Iw7PPoU4")
+             $("body").addClass("brokenClouds")
         }
         if(weather.icon === "09d" || weather.icon === "09n"){
             //lofi hiphop playlist
             youtubeAPI("hHW1oY26kxQ")
+            $("body").addClass("showerRain")
         }
         if(weather.icon === "10d" || weather.icon === "10n"){
             //top 100 playlist
             youtubeAPI("jJW7Som1uY")
+            $("body").addClass("rain")
         }
         if(weather.icon === "11d" || weather.icon === "11n"){
             //Rap playlist
             youtubeAPI("57w9CvHdomY")
+            $("body").addClass("thunderStorm")
         }
         if(weather.icon === "13d" || weather.icon === "13n"){
             //upbeat playlist
             youtubeAPI("eosLoIMzW7E")
+            $("body").addClass("snow")
         }
         if(weather.icon === "50d" || weather.icon === "50n"){
             //gospel playlist
             youtubeAPI("qSxNxnBGGKg")
+            $("body").addClass("mist")
         }
     })
 
