@@ -7,3 +7,30 @@
 .input-group-label:first-child {
     border-radius: 15px 0px 0px 15px;
 }
+.clear{
+    background-image: url(../images/sunny.jpg);
+}
+.fewClouds{
+    background-image: url(../images/02fewclouds.jpg);
+}
+.scatteredClouds{
+    background-image: url(../images/03scatteredclouds.jpg);
+}
+.brokenClouds{
+    background-image: url(../images/04brokenclouds.jpg);
+}
+.showerRain{
+    background-image: url(../images/09showerrain.jpg);
+}
+.rain{
+    background-image: url(../images/10rain.jpg);
+}
+.thunderStorm{
+    background-image: url(../images/11thunderstorm.jpg);
+}
+.snow{
+    background-image: url(../images/13snow.jpg);
+}
+.mist{
+    background-image: url(../images/50mist.jpg);
+}
