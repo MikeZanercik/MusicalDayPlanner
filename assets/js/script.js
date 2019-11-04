@@ -7,8 +7,6 @@ $(".btn-primary").on("click", function () {
     //i've been messing around with the URL to make it more dynamic but should probably make it much simpler
     var queryURL = "https://www.googleapis.com/youtube/v3/playlists?part=snippet&maxResults=1&q=" + keyWord + "&type=video&videoEmbeddable=true&key=" + APIKey;
 
-
-
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -28,4 +26,11 @@ $(".btn-primary").on("click", function () {
     })
 })
 
-
+  $('.button').on("click", function(){
+        var holder = $(this).val();
+        console.log(holder)
+       localStorage.setItem(holder, $(holder).val());
+    })
+    for (var j = 0; j < 24; j++) {
+        $('#' + j).val(localStorage.getItem('#' + j))
+    }
