@@ -114,10 +114,6 @@ $("document").ready(function() {
     }) 
 })
 
-<<<<<<< HEAD
-
-
-=======
   $('.button').on("click", function(){
         var holder = $(this).val();
         console.log(holder)
@@ -126,4 +122,3 @@ $("document").ready(function() {
     for (var j = 0; j < 24; j++) {
         $('#' + j).val(localStorage.getItem('#' + j))
     }
->>>>>>> 1f08a650e33d38a99ffe7ea2c828bd28216e8564
