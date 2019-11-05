@@ -105,7 +105,7 @@ $("document").ready(function () {
             keyWord = "bM0Iw7PPoU4"
         }
         if (selector === "Top 100") {
-            keyWord = "jJW7Som1uY"
+            keyWord = "ER20SzguerI"
         }
         if (selector === "Rap") {
             keyWord = "57w9CvHdomY"
