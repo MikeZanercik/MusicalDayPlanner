@@ -1,35 +1,53 @@
 /*Header styles*/
 .header {
-    background: rgb(3,1,42);
-    background: linear-gradient(90deg, rgba(3,1,42,0.85) 0%, rgba(34,123,164,1) 72%, rgba(237,197,141,1) 100%);
+    background: rgb(3, 1, 42);
+    background: linear-gradient(90deg, rgba(3, 1, 42, 0.85) 0%, rgba(34, 123, 164, 1) 72%, rgba(237, 197, 141, 1) 100%);
     color     : whitesmoke;
 }
 
 
 /*Styles for Sidebar*/
 
+#weatherInfo {
+    padding      : 20px;
+    margin-top   : 20px;
+    margin-bottom: 25px;
+    background   : rgb(34, 123, 164);
+    background   : radial-gradient(circle, rgba(34, 123, 164, 0.85) 0%, rgba(3, 1, 42, 1) 100%);
+    color        : whitesmoke;
 
-.stationsDropdn {
-    margin: 15px;
-    padding: 20px;
 }
 
-#weatherInfo {
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    background: rgb(34,123,164);
-    background: radial-gradient(circle, rgba(34,123,164,0.85) 0%, rgba(3,1,42,1) 100%);
-    color     : whitesmoke;
+.is-dropdown-submenu-parent {
+    margin: 0 auto;
+}
 
+.stationsDropdn {
+    margin    : 15px;
+    padding   : 20px;
+    align-self: center;
+}
+
+#stationsBtn {
+    width     : 350px;
+    align-self: center !important;
+    padding   : 20px;
+    background: rgb(34, 123, 164);
+    background: radial-gradient(circle, rgba(34, 123, 164, 0.85) 0%, rgba(3, 1, 42, 1) 100%);
+    color     : whitesmoke;
 }
 
 #theYouTubes {
-    margin-top: 25px;
+    margin-top   : 25px;
     margin-bottom: 25px;
 }
 
 /*styling for Planner section*/
+.buttonSave {
+    background: rgb(34, 123, 164);
+    background: radial-gradient(circle, rgba(34, 123, 164, 0.85) 0%, rgba(3, 1, 42, 1) 100%);
+}
+
 .input-group {
     margin-bottom: 0;
 }
@@ -41,6 +59,7 @@
 .input-group-label:first-child {
     border-radius: 15px 0px 0px 15px;
 }
+
 
 /*styling for background img*/
 .clear {
@@ -78,4 +97,3 @@
 .mist {
     background-image: url(../images/50mist.jpg);
 }
-
