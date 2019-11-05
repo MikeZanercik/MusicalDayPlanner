@@ -89,19 +89,14 @@ $("document").ready(function () {
     }
 
 
-    $(".btn-primary").on("click", function () {
+    $(".expanded").on("click", function () {
         event.preventDefault();
-        selector = ($(":input.form-control").val());
+        selector = ($(this).text());
+        console.log(selector)
         var keyWord = ""
 
-        if (selector === "Lofi HipHop") {
-            keyWord = "hHW1oY26kxQ"
-        }
-        if (selector === "Jazz") {
+        if (selector === "Jazzy") {
             keyWord = "cBJHd4p9Ct8"
-        }
-        if (selector === "Techno") {
-            keyWord = "d8Oc90QevaI"
         }
         if (selector === "Upbeat") {
             keyWord = "eosLoIMzW7E"
@@ -112,7 +107,7 @@ $("document").ready(function () {
         if (selector === "Top 100") {
             keyWord = "jJW7Som1uY"
         }
-        if (selector === "Gangster") {
+        if (selector === "Rap") {
             keyWord = "57w9CvHdomY"
         }
         if (selector === "Gospel") {
@@ -121,14 +116,8 @@ $("document").ready(function () {
         if (selector === "Dance") {
             keyWord = "UX1cdPqW5M8"
         }
-        if (selector === "Indie") {
+        if (selector === "Laidback") {
             keyWord = "txCvcmp8PVU"
-        }
-        if (selector === "Pop") {
-            keyWord = "OlP_FYgSEtM"
-        }
-        if (selector === "Lullaby") {
-            keyWord = "dzyhiM6-4MM"
         }
 
         youtubeAPI(keyWord);
