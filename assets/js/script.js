@@ -150,7 +150,7 @@ function renderCalendar() {
             <span class="input-group-label">${index > 0 && index < 10 ? "&nbsp;&nbsp;" + time : time}</span>
             <textarea class="planner-item input-group-field" id="item-${index}" placeholder="Notes"></textarea>
             <div class="input-group-button">
-                <button type="button" class="button secondary buttonSave" > <i class="far fa-save"> </i></button>
+                <button type="button" class="button buttonSave" > <i class="far fa-save"> </i></button>
             </div>
         </div>
     </div>`);
