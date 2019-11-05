@@ -31,13 +31,13 @@ See also the list of [contributors](https://github.com/MikeZanercik/MusicalDayPl
 
 ## Overview
 Here is the website on load
-![Webpage on Load](/assets/images/)
+![Webpage on Load](/assets/images/weather.png)
 
 Here a photo of the dropdown
-![Dropdown in webpage](/assets/images/)
+![Dropdown in webpage](/assets/images/dropdown.png)
 
 Here is a photo with saved inputs in planner
-![Planner Notes](/assets/images/)
+![Planner Notes](/assets/images/plannerNotes.png)
 
 ## Difficulties
 No project comes without its own set of difficulties and issues. There were a few things we had issues with along the way. It took us some time to be sure we stepped on each others toes as little as possible. With this being the first time doing a project in a group and having multiple people push their changes it is easy to run into merge conflicts and other issues. We had to learn how to be sure that everything we were pushing wasn't going to ruin what someone else was already working on. 
