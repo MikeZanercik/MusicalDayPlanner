@@ -6,14 +6,17 @@ function getFormattedTime(){
     return moment().format("h:mm:ss a");
 }
 
+// .add(1,'day') not working?
 function getGreeting(){
     var greeting, currentHr;
     currentHr = moment();
     if(currentHr.isBetween(moment("4am", "ha"), moment("12pm", "ha"), "hour", "[)")) {
         greeting = "Good Morning!";
-    }else if (currentHr.isBetween(moment("12pm", "ha"), moment("6pm", "ha"), "hour", "[)")) {
+    } else if (currentHr.isBetween(moment("12pm", "ha"), moment("6pm", "ha"), "hour", "[)")) {
         greeting = "Good Afternoon!";
-    } else if (currentHr.isBetween(moment("6pm", "ha"), moment("4am", "ha"), "hour", "[)")) {
+    } else if (currentHr.isBetween(moment("6pm", "ha"), moment("12am", "ha"), "hour", "[)")) {
+        greeting = "Good Evening!";
+    } else if (currentHr.isBetween(moment("12am", "ha"), moment("4am", "ha"), "hour", "[)")) {
         greeting = "Good Evening!";
     }
     return greeting;
