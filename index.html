@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musical Day Planner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css"
+        integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--FontAwesome Icons-->
+    <script src="https://kit.fontawesome.com/0889c1da77.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="grid-y medium-grid-frame padding-x">
+        <!--Header-->
+        <div class="cell shrink header text-center align-center">
+            <div class="grid-y">
+                <h1 class="h3" id="headerGreeting"></h1>
+                <h3 class="h5" id="headerDate"></h3>
+                <h3 class="h4" id="headerTime"> 10:05 am</h3>
+            </div>
+        </div>
+        <!--Main-->
+        <div class="cell medium-auto medium-cell-block-container">
+            <div class="grid-x grid-padding-x grid-padding-y-small cell">
+                <!--Sidebar-->
+                <div class="cell medium-5 medium-cell-block-y side-info align-center">
+                    <div class="grid-y">
+                        <!--Weather (MICHAEL)-->
+                        <div class="cell" id="weatherInfo">
+                            <h1 id="city-name"></h1>
+                            <h3 id="temp"></h3>
+                            <h3 id="humidity"></h3>
+                            <h3 id="wind-speed"></h3>
+                        </div>
+                        <!--Select Station Dropdown-->
+                        <div class="cell" id="stationsDropdn">
+                                <ul class="dropdown menu" data-dropdown-menu>
+                                    <li> <button class="button large expanded" id="stationsBtn">Stations</button>
+                                        <ul class="menu">
+                                            <li><button class="button expanded dropdownBtn" id="danceM">Dance</button></li>
+                                            <li><button class="button expanded dropdownBtn" id="jazzyM">Jazzy</button></li>
+                                            <li><button class="button expanded dropdownBtn" id="slowM">Slow</button></li>
+                                            <li><button class="button expanded dropdownBtn" id="lofiM">Laidback</button></li>
+                                            <li><button class="button expanded dropdownBtn" id="rapM">Rap</button></li>
+                                            <li><button class="button expanded dropdownBtn" id="topM">Top 100</button></li>
+                                            <li><button class="button expanded dropdownBtn" id="upbeatM">Upbeat</button></li>
+                                            <li><button class="button expanded dropdownBtn" id="jesusM">Gospel</button></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                        <!--YouTube (MIKE)-->
+                        <div class="cell" id="theYouTubes">
+                            <iframe id="videoHere" width="100%" height="300px" frameborder="1"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Planner (Gabe)-->
+                <div class="cell medium-7 medium-cell-block-y">
+                    <div class="planner grid-y">
+                
+                        ​
+                    </div>
+                </div>
+
+
+                <!--End Main-->
+            </div>
+
+            <!--End Grid-y (shell)-->
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"
+        integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/headerScript.js"></script>
+
+    <script>
+        $(document).foundation();
+        initHeader();
+    </script>
+
+</body>
+
+
+</html>
