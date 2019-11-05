@@ -31,8 +31,8 @@
         <div class="cell medium-auto medium-cell-block-container">
             <div class="grid-x grid-padding-x grid-padding-y-small cell">
                 <!--Sidebar-->
-                <div class="cell medium-5 side-info">
-                    <div class="grid-y medium-grid-frame">
+                <div class="cell medium-5 medium-cell-block-y side-info">
+                    <div class="grid-y">
                         <!--Weather (MICHAEL)-->
                         <div class="cell" id="weatherInfo">
                             <h1 id="city-name"></h1>
@@ -40,284 +40,37 @@
                             <h3 id="humidity"></h3>
                             <h3 id="wind-speed"></h3>
                         </div>
+                        <!--Select Station Dropdown-->
+                        <div class="cell stationsDropdn">
+                                <ul class="dropdown menu" data-dropdown-menu>
+                                    <li> <button class="button large expanded" id="stationsBtn">Stations</button>
+                                        <ul class="menu">
+                                            <li><button class="button expanded" id="danceM">Dance</button></li>
+                                            <li><button class="button expanded" id="jazzyM">Jazzy</button></li>
+                                            <li><button class="button expanded" id="slowM">Slow</button></li>
+                                            <li><button class="button expanded" id="lofiM">Laidback</button></li>
+                                            <li><button class="button expanded" id="rapM">Rap</button></li>
+                                            <li><button class="button expanded" id="topM">Top 100</button></li>
+                                            <li><button class="button expanded" id="upbeatM">Upbeat</button></li>
+                                            <li><button class="button expanded" id="jesusM">Gospel</button></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+    
+                            </div>
                         <!--YouTube (MIKE)-->
                         <div class="cell" id="theYouTubes">
                             <iframe id="videoHere" width="100%" height="300px" frameborder="1"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
-                        <div class="cell">
-                            <button class="button" type="button" data-toggle="musicChoiceDropdown">Choose a Channel</button>
-                            <div class="dropdown menu" id="musicChoiceDropdown" data-dropdown-menu>
-                                <button class="button" id="danceM">Dance</button>
-                                <button class="button" id="jazzyM">Jazzy</button>
-                                <button class="button" id="indieM">Indie</button>
-                                <button class="button" id="slowM">Slow</button>
-                                <button class="button" id="lofiM">Laidback</button>
-                                <button class="button" id="topM">Top 100</button>
-                                <button class="button" id="rapM">Rap</button>
-                                <button class="button" id="upbeatM">Upbeat</button>
-                                <button class="button" id="jesusM">Gospel</button>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <!--Planner (Gabe)-->
                 <div class="cell medium-7 medium-cell-block-y">
                     <div class="planner grid-y">
-                        ​
-                        <!-- <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">12:00 am</span>
-                                <textarea class="input-group-field" id="0" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary buttonSave" value="#0"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;1:00 am</span>
-                                <textarea class="input-group-field" id="1" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary buttonSave" value="#1"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;2:00 am</span>
-                                <textarea class="input-group-field" id="2" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#2"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;3:00 am</span>
-                                <textarea class="input-group-field" id="3" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#3"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;4:00 am</span>
-                                <textarea class="input-group-field" id="4" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#4"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;5:00 am</span>
-                                <textarea class="input-group-field" id="5" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#5"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;6:00 am</span>
-                                <textarea class="input-group-field" id="6" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#6"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;7:00 am</span>
-                                <textarea class="input-group-field" id="7" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#7"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;8:00 am</span>
-                                <textarea class="input-group-field" id="8" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#8"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">&nbsp;&nbsp;9:00 am</span>
-                                <textarea class="input-group-field" id="9" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#9"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">10:00 am</span>
-                                <textarea class="input-group-field" id="10" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#10"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">11:00 am</span>
-                                <textarea class="input-group-field" id="11" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#11"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">12:00 pm</span>
-                                <textarea class="input-group-field" id="12" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#12"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">1:00 pm</span>
-                                <textarea class="input-group-field" id="13" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#13"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">2:00 pm</span>
-                                <textarea class="input-group-field" id="14" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#14"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">2:00 pm</span>
-                                <textarea class="input-group-field" id="15" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#15"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">3:00 pm</span>
-                                <textarea class="input-group-field" id="16" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#16"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">4:00 pm</span>
-                                <textarea class="input-group-field" id="17" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#17"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">5:00 pm</span>
-                                <textarea class="input-group-field" id="18" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#18"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">6:00 pm</span>
-                                <textarea class="input-group-field" id="19" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#19"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">7:00 pm</span>
-                                <textarea class="input-group-field" id="20" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#20"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">8:00 pm</span>
-                                <textarea class="input-group-field" id="21" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#21"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">9:00 pm</span>
-                                <textarea class="input-group-field" id="22" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#22"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">10:00 pm</span>
-                                <textarea class="input-group-field" id="23" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#23"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <div class="input-group">
-                                <span class="input-group-label">11:00 pm</span>
-                                <textarea class="input-group-field" id="24" placeholder="Notes"></textarea>
-                                <div class="input-group-button">
-                                    <button type="button" class="button success secondary" value="#24"><i
-                                            class="far fa-save"></i>Save</button>
-                                </div>
-                            </div>
-                        </div> -->
-
-
+                
                         ​
                     </div>
                 </div>
