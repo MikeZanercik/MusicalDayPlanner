@@ -89,7 +89,7 @@ $("document").ready(function () {
     }
 
 
-    $(".expanded").on("click", function () {
+    $(".dropdownBtn").on("click", function () {
         event.preventDefault();
         selector = ($(this).text());
         console.log(selector)
