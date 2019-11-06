@@ -33,7 +33,7 @@ See also the list of [contributors](https://github.com/MikeZanercik/MusicalDayPl
 Here is the website on load
 ![Webpage on Load](/assets/images/weather.png)
 
-Here a photo of the dropdown
+Here is a photo of the dropdown
 ![Dropdown in webpage](/assets/images/dropdown.png)
 
 Here is a photo with saved inputs in planner
